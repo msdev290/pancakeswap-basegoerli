@@ -20,9 +20,8 @@ export const MOONPAY_SIGN_URL = 'https://pcs-on-ramp-api.com'
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
 export const INFO_CLIENT = 'https://proxy-worker-api.pancakeswap.com/bsc-exchange'
-export const V3_BSC_INFO_CLIENT = `https://open-platform.nodereal.io/${
-  process.env.NEXT_PUBLIC_NODE_REAL_API_INFO || process.env.NEXT_PUBLIC_NODE_REAL_API_ETH
-}/pancakeswap-v3/graphql`
+export const V3_BSC_INFO_CLIENT = `https://open-platform.nodereal.io/${process.env.NEXT_PUBLIC_NODE_REAL_API_INFO || process.env.NEXT_PUBLIC_NODE_REAL_API_ETH
+  }/pancakeswap-v3/graphql`
 
 export const INFO_CLIENT_ETH = 'https://api.thegraph.com/subgraphs/name/pancakeswap/exhange-eth'
 export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
@@ -76,6 +75,7 @@ export const V3_SUBGRAPH_URLS = {
   [ChainId.ZKSYNC_TESTNET]: 'https://api.studio.thegraph.com/query/45376/exchange-v3-zksync-testnet/version/latest',
   [ChainId.LINEA_TESTNET]:
     'https://thegraph.goerli.zkevm.consensys.net/subgraphs/name/pancakeswap/exchange-v3-linea-goerli',
+  [ChainId.BASE_TESTNET]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth',
 } satisfies Record<ChainId, string | null>
 
 export const TRADING_REWARD_API = 'https://pancake-trading-fee-rebate-api.pancakeswap.com/api/v1'
